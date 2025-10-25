@@ -27,6 +27,7 @@ section {
     max-width: 1200px;
 }
 
+/* ===== HEADER ===== */
 .header {
     position: fixed;
     top: 0;
@@ -53,7 +54,7 @@ section {
 
 .navbar a:hover {
     color: var(--main-color);
-    border-bottom: 0.1 rem solid var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.5rem;
     font-size: 2rem;
 }
@@ -68,20 +69,7 @@ section {
     height: 40px;
 }
 
-.btn {
-    background: var(--main-color);
-    color: #fff;
-    padding: 1rem 3rem;
-    font-size: 1.7rem;
-    cursor: pointer;
-    margin: 1rem;
-    display: inline-block;
-}
-
-.btn:hover {
-    letter-spacing: 0.1rem;
-}
-
+/* ===== HOME ===== */
 .home-container {
     background: url("https://i.ibb.co/KX8pvpC/home-img.jpg");
     height: 100vh;
@@ -112,6 +100,22 @@ section {
     padding: 1rem 0;
 }
 
+.btn {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin: 1rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+/* ===== TITLES ===== */
 .title {
     font-size: 4rem;
     color: var(--main-color);
@@ -121,10 +125,11 @@ section {
 }
 
 .title span {
-   color: #fff;
-   text-transform: uppercase;
+    color: #fff;
+    text-transform: uppercase;
 }
 
+/* ===== ABOUT ===== */
 .about .row {
     display: flex;
     align-items: center;
@@ -137,8 +142,8 @@ section {
 }
 
 .about .row .content h3 {
-   font-size: 3rem;
-   color: #fff;
+    font-size: 3rem;
+    color: #fff;
 }
 
 .about .row .content p {
@@ -148,7 +153,8 @@ section {
     line-height: 1.8;
 }
 
-.menu .box-container {
+/* ===== MENU ===== */
+.box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -158,15 +164,17 @@ section {
     text-align: center;
     border: var(--border);
     padding: 5rem;
+    background-color: var(--black);
+    border-radius: 1rem;
 }
 
-.menu .box-container .box .img {
+.menu .box-container .box img {
     height: 10rem;
 }
 
-.menu .box-container .box .h3 {
+.menu .box-container .box h3 {
     color: #fff;
-    font-size: 1rem 0;
+    font-size: 2rem;
     padding: 1rem 0;
 }
 
@@ -180,8 +188,169 @@ section {
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: lighter;
-
 }
 
+.menu .box-container .box:hover {
+    background-color: #fff;
+}
 
+.menu .box-container .box:hover>* {
+    color: var(--black);
+}
 
+/* ===== REVIEW ===== */
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: var(--black);
+    border-radius: 1rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.review .box-container .box .users {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+/* ===== ADDRESS & FOOTER ===== */
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover {
+    background-color: var(--main-color);
+}
+
+/* ===== MENU HAMBURGUER ===== */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 22px;
+}
+
+.menu-btn span {
+    background: #fff;
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-btn span:nth-child(1) {
+    top: 0;
+}
+
+.menu-btn span:nth-child(2) {
+    top: 9px;
+}
+
+.menu-btn span:nth-child(3) {
+    top: 18px;
+}
+
+/* Estado ativo -> transforma o menu em X */
+.menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--bg);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease;
+        flex-direction: column;
+        z-index: 90;
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+
+    .menu-btn {
+        display: inline-block;
+        z-index: 100;
+    }
+
+    .icons img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .content h3 {
+        font-size: 4rem;
+    }
+
+    .content p {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .home-container {
+        height: 90vh;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
