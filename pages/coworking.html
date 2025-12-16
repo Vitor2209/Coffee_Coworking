@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Montis Coffee House Coworking - Quiet work zones designed for focus.">
+  <title>Coworking | Montis Coffee House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="../index.html" class="logo">Montis <span>Coffee House</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+            <li><a href="menu.html" class="nav-link" data-i18n="navMenu">Menu</a></li>
+            <li><a href="coworking.html" class="nav-link active" data-i18n="navCoworking">Coworking</a></li>
+            <li><a href="location.html" class="nav-link" data-i18n="navLocation">Location</a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          </ul>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="pt">PT</button>
+          </div>
+          <a href="../index.html#newsletter" class="btn btn-primary header-cta" data-i18n="headerCta">Join Waitlist</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero-short">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="Coworking space">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content fade-up">
+      <h1 data-i18n="coworkHeroTitle">Coworking</h1>
+      <p class="hero-slogan" data-i18n="coworkHeroDesc">Where productivity meets tranquility.</p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline">Simple Process</p>
+        <h2 data-i18n="howTitle">How It Works</h2>
+      </div>
+      <div class="features-grid stagger">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            </svg>
+          </div>
+          <h4 data-i18n="step1">Visit</h4>
+          <p data-i18n="step1Desc">Walk in during opening hours</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v8M8 12h8"/>
+            </svg>
+          </div>
+          <h4 data-i18n="step2">Choose</h4>
+          <p data-i18n="step2Desc">Pick Focus or Meet Zone</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/>
+            </svg>
+          </div>
+          <h4 data-i18n="step3">Work</h4>
+          <p data-i18n="step3Desc">Enjoy coffee and productivity</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+              <path d="M22 4L12 14.01l-3-3"/>
+            </svg>
+          </div>
+          <h4>Repeat</h4>
+          <p>Come back anytime</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zones Split Section -->
+  <section class="split-section">
+    <div class="split-image slide-left">
+      <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1000&q=80" alt="Focus zone">
+    </div>
+    <div class="split-content slide-right">
+      <p class="tagline" data-i18n="focusZone">Focus Zone</p>
+      <h2>Deep Work Space</h2>
+      <p class="lead">A quiet environment designed for deep concentration. No calls, minimal noise, maximum productivity.</p>
+      <ul style="margin: var(--space-lg) 0; color: var(--color-white-muted);">
+        <li style="margin-bottom: var(--space-xs);">\u2713 Silent environment</li>
+        <li style="margin-bottom: var(--space-xs);">\u2713 Ergonomic seating</li>
+        <li style="margin-bottom: var(--space-xs);">\u2713 Individual power outlets</li>
+        <li>\u2713 Natural lighting</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="split-section" style="direction: rtl;">
+    <div class="split-image slide-right" style="direction: ltr;">
+      <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?w=1000&q=80" alt="Meet zone">
+    </div>
+    <div class="split-content slide-left" style="direction: ltr;">
+      <p class="tagline" data-i18n="meetZone">Meet Zone</p>
+      <h2>Collaboration Space</h2>
+      <p class="lead">A flexible area for calls, meetings, and collaborative sessions. Connect while enjoying great coffee.</p>
+      <ul style="margin: var(--space-lg) 0; color: var(--color-white-muted);">
+        <li style="margin-bottom: var(--space-xs);">\u2713 Video call friendly</li>
+        <li style="margin-bottom: var(--space-xs);">\u2713 Meeting tables</li>
+        <li style="margin-bottom: var(--space-xs);">\u2713 Phone booths</li>
+        <li>\u2713 Presentation screens</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline">Everything You Need</p>
+        <h2 data-i18n="amenities">Amenities</h2>
+      </div>
+      <div class="image-grid image-grid-4 stagger">
+        <div class="image-card" style="aspect-ratio: 1;">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80" alt="WiFi">
+          <div class="image-card-overlay">
+            <h3 data-i18n="amenity1">High-Speed WiFi</h3>
+          </div>
+        </div>
+        <div class="image-card" style="aspect-ratio: 1;">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&q=80" alt="Desks">
+          <div class="image-card-overlay">
+            <h3 data-i18n="amenity3">Standing Desks</h3>
+          </div>
+        </div>
+        <div class="image-card" style="aspect-ratio: 1;">
+          <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?w=400&q=80" alt="Booths">
+          <div class="image-card-overlay">
+            <h3 data-i18n="amenity4">Phone Booths</h3>
+          </div>
+        </div>
+        <div class="image-card" style="aspect-ratio: 1;">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&q=80" alt="Coffee">
+          <div class="image-card-overlay">
+            <h3>Premium Coffee</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="newsletter-section">
+    <div class="newsletter-bg">
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1920&q=80" alt="Workspace">
+      <div class="newsletter-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="newsletter-content fade-up">
+        <h2>Ready to Work Better?</h2>
+        <p>Join our waitlist to be the first to experience Montis coworking.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top: var(--space-lg);">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Montis <span>Coffee House</span></a>
+          <p data-i18n="footerSlogan">Highland coffee, low noise.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <p data-i18n="hoursTBA">Opening hours to be announced</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <p>@montiscoffee</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Montis Coffee House. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../Script/script.js"></script>
+</body>
+</html>

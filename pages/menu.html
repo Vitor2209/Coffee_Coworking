@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Montis Coffee House Menu - Specialty coffee from the Brazilian highlands.">
+  <title>Menu | Montis Coffee House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="../index.html" class="logo">Montis <span>Coffee House</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+            <li><a href="menu.html" class="nav-link active" data-i18n="navMenu">Menu</a></li>
+            <li><a href="coworking.html" class="nav-link" data-i18n="navCoworking">Coworking</a></li>
+            <li><a href="location.html" class="nav-link" data-i18n="navLocation">Location</a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          </ul>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="pt">PT</button>
+          </div>
+          <a href="../index.html#newsletter" class="btn btn-primary header-cta" data-i18n="headerCta">Join Waitlist</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero-short">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=1920&q=80" alt="Coffee being poured">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content fade-up">
+      <h1 data-i18n="menuHeroTitle">Our Menu</h1>
+      <p class="hero-slogan" data-i18n="menuHeroDesc">From the highlands of Brazil to your cup.</p>
+    </div>
+  </section>
+
+  <!-- Espresso Bar -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline">Espresso Bar</p>
+        <h2 data-i18n="menuCat1">Espresso Bar</h2>
+      </div>
+      <div class="image-grid image-grid-2 stagger">
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=800&q=80" alt="Espresso">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Signature</span>
+            <h3>Espresso</h3>
+            <p>Bold and concentrated highland essence</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=800&q=80" alt="Flat White">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Classic</span>
+            <h3>Flat White</h3>
+            <p>Velvety microfoam over double shot</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu-grid stagger" style="margin-top: var(--space-lg);">
+        <div class="menu-card">
+          <h4>Cappuccino <span class="tag">Classic</span></h4>
+          <p>Italian style with perfect foam ratio</p>
+        </div>
+        <div class="menu-card">
+          <h4>Americano</h4>
+          <p>Smooth and full-bodied, diluted to perfection</p>
+        </div>
+        <div class="menu-card">
+          <h4>Macchiato <span class="tag">Bold</span></h4>
+          <p>Espresso marked with a touch of foam</p>
+        </div>
+        <div class="menu-card">
+          <h4>Cortado</h4>
+          <p>Equal parts espresso and steamed milk</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Coffee -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline">Slow Brew</p>
+        <h2 data-i18n="menuCat2">Filter Coffee</h2>
+      </div>
+      <div class="image-grid image-grid-2 stagger">
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Pour Over">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Single Origin</span>
+            <h3>Pour Over</h3>
+            <p>Hand-brewed to highlight origin characteristics</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=80" alt="Batch Brew">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Fresh Daily</span>
+            <h3>Batch Brew</h3>
+            <p>Freshly brewed throughout the day</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cold Drinks -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline">Refreshing</p>
+        <h2 data-i18n="menuCat3">Cold Drinks</h2>
+      </div>
+      <div class="image-grid image-grid-3 stagger">
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Cold Brew">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">18 Hours</span>
+            <h3>Cold Brew</h3>
+            <p>Smooth, low acidity, naturally sweet</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600&q=80" alt="Iced Latte">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Classic</span>
+            <h3>Iced Latte</h3>
+            <p>Espresso over ice with cold milk</p>
+          </div>
+        </div>
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=600&q=80" alt="Nitro Cold Brew">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Premium</span>
+            <h3>Nitro Cold Brew</h3>
+            <p>Nitrogen-infused, creamy cascade</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Origin Section -->
+  <section class="wide-image-section">
+    <img src="https://images.unsplash.com/photo-1524350876685-274059332603?w=1920&q=80" alt="Coffee plantation">
+    <div class="wide-image-overlay">
+      <div class="wide-image-content fade-up">
+        <p class="tagline" style="color: var(--color-gold);">Our Origin</p>
+        <h2>Minas Gerais, Brazil</h2>
+        <p style="max-width: 600px; margin: var(--space-md) auto;">Our beans are grown at altitudes above 1,000 metres in the mountainous region of Minas Gerais. The high altitude produces complex flavours and natural sweetness.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Montis <span>Coffee House</span></a>
+          <p data-i18n="footerSlogan">Highland coffee, low noise.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerLinks">Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerHours">Opening Hours</h4>
+          <p data-i18n="hoursTBA">Opening hours to be announced</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footerSocial">Follow Us</h4>
+          <p>@montiscoffee</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footerCopyright">© 2025 Montis Coffee House. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html" data-i18n="footerPrivacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footerTerms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../Script/script.js"></script>
+</body>
+</html>

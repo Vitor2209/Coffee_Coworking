@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find Montis Coffee House - Opening soon in London.">
+  <title>Location | Montis Coffee House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="../index.html" class="logo">Montis <span>Coffee House</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+            <li><a href="menu.html" class="nav-link" data-i18n="navMenu">Menu</a></li>
+            <li><a href="coworking.html" class="nav-link" data-i18n="navCoworking">Coworking</a></li>
+            <li><a href="location.html" class="nav-link active" data-i18n="navLocation">Location</a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+            <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          </ul>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="pt">PT</button>
+          </div>
+          <a href="../index.html#newsletter" class="btn btn-primary header-cta" data-i18n="headerCta">Join Waitlist</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero-short">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1920&q=80" alt="London skyline">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content fade-up">
+      <h1 data-i18n="locationHeroTitle">Location</h1>
+      <p class="hero-slogan" data-i18n="locationHeroDesc">Find your way to Montis.</p>
+    </div>
+  </section>
+
+  <!-- Location Info -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline">Coming Soon</p>
+        <h2>Central London</h2>
+        <p>We're preparing a special space for you in one of London's most vibrant neighbourhoods.</p>
+      </div>
+    </div>
+    
+    <div class="location-image fade-up" style="margin-top: var(--space-xl);">
+      <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?w=1920&q=80" alt="London street">
+      <div class="location-card">
+        <h4 style="color: var(--color-gold); margin-bottom: var(--space-xs);">Montis Coffee House</h4>
+        <p style="font-size: 1.125rem;">Central London</p>
+        <p style="margin-top: var(--space-sm); color: var(--color-white-muted);">Full address to be announced upon opening</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transport -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline">Easy Access</p>
+        <h2 data-i18n="transportTitle">Getting Here</h2>
+      </div>
+      <div class="features-grid stagger">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M16.24 7.76a6 6 0 010 8.49m-8.48-.01a6 6 0 010-8.49"/>
+            </svg>
+          </div>
+          <h4>Underground</h4>
+          <p>Nearest station to be announced</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="1" y="3" width="15" height="13" rx="2"/>
+              <path d="M16 8h4l3 5v5h-7M16 16h-3"/>
+              <circle cx="5" cy="16" r="2"/>
+              <circle cx="18.5" cy="16" r="2"/>
+            </svg>
+          </div>
+          <h4>Bus Routes</h4>
+          <p>Multiple routes serve the area</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <h4>Parking</h4>
+          <p>Street parking available nearby</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h4>Cycling</h4>
+          <p>Bike racks available outside</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section">
+    <div class="container">
+      <div class="map-placeholder fade-up" style="border: 1px solid rgba(255,255,255,0.1);">
+        <div style="text-align: center;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="margin-bottom: var(--space-sm); opacity: 0.5;">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <p>Interactive map coming soon</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top: var(--space-md);">Open Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessibility -->
+  <section class="wide-image-section" style="height: 50vh;">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80" alt="Accessibility">
+    <div class="wide-image-overlay">
+      <div class="wide-image-content fade-up">
+        <h2 data-i18n="accessTitle">Accessibility</h2>
+        <p style="max-width: 600px; margin: var(--space-md) auto;" data-i18n="accessDesc">Step-free access, accessible facilities, and assistance available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Montis <span>Coffee House</span></a>
+          <p data-i18n="footerSlogan">Highland coffee, low noise.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <p>Opening hours to be announced</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <p>@montiscoffee</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Montis Coffee House. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../Script/script.js"></script>
+</body>
+</html>

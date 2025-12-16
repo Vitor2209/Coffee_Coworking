@@ -1,197 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Coffee-Coworking</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Montis Coffee House - Highland coffee, low noise. A premium coffee house and coworking space opening soon in London.">
+  <title>Montis Coffee House | Highland Coffee, Low Noise</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style/style.css">
 </head>
-
 <body>
-    <header class="header">
-        <section>
-            <a href="#" class="logo">
-                <img src="https://i.ibb.co/yp84LgK/logo.png" alt="logo">
-            </a>
-
-            <!-- Menu de navegação -->
-            <nav class="navbar" id="navbar">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#review">Review</a>
-                <a href="#address">Address</a>
-            </nav>
-
-            <div class="icons">
-                <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/search.png" alt="search" />
-                <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/shopping-cart.png"
-                    alt="shopping-cart" />
-            </div>
-
-            <!-- Botão Hamburguer com animação -->
-            <div id="menu-btn" class="menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </section>
-    </header>
-
-    <div class="home-container">
-        <section id="home">
-            <div class="content">
-                <h3>CODE WITH THE BEST COFFEE IN TOWN</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem excepturi eos itaque porro vel, odio
-                    architecto non tenetur sunt iure cumque! Libero ipsam quod iusto, laudantium totam voluptate est
-                    beatae.</p>
-                <a href="#" class="btn">Grab Yours Now</a>
-            </div>
-        </section>
+  <!-- ============================================
+       HEADER
+       ============================================ -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">Montis <span>Coffee House</span></a>
+        
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link active" data-i18n="navHome">Home</a></li>
+            <li><a href="pages/menu.html" class="nav-link" data-i18n="navMenu">Menu</a></li>
+            <li><a href="pages/coworking.html" class="nav-link" data-i18n="navCoworking">Coworking</a></li>
+            <li><a href="pages/location.html" class="nav-link" data-i18n="navLocation">Location</a></li>
+            <li><a href="pages/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+            <li><a href="pages/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+          </ul>
+          
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="pt">PT</button>
+          </div>
+          
+          <a href="#newsletter" class="btn btn-primary header-cta" data-i18n="headerCta">Join Waitlist</a>
+        </nav>
+      </div>
     </div>
+  </header>
 
-    <section class="about" id="about">
-        <h2 class="title">About <span>Us</span></h2>
-        <div class="row">
-            <div class="container-imge">
-                <img src="https://i.ibb.co/GRpcL8v/about-img.jpg" alt="about-img">
-            </div>
-            <div class="content">
-                <h3>What Makes Our Coffee Special</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla nemo natus necessitatibus delectus
-                    mollitia quod, recusandae reiciendis nesciunt consectetur dolores quisquam perferendis quos
-                    accusantium repellat minus nam. Eveniet, quo corrupti.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto exercitationem doloribus
-                    voluptas obcaecati ullam harum, amet repudiandae qui quia quibusdam. Itaque quisquam repellendus
-                    rerum sunt illo delectus modi ex.</p>
-                <a href="#" class="btn">Learn More</a>
-            </div>
+  <!-- ============================================
+       HERO - FULLSCREEN WITH BACKGROUND IMAGE
+       ============================================ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=80" alt="Premium coffee atmosphere">
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="hero-content fade-up">
+      <p class="hero-tagline" data-i18n="heroTagline">Opening Soon in London</p>
+      <h1>Montis Coffee House</h1>
+      <p class="hero-slogan" data-i18n="heroSlogan">Highland coffee, low noise.</p>
+      <p class="hero-description" data-i18n="heroDescription">From the Brazilian highlands to a calm workspace in London. A sanctuary for focused minds and coffee connoisseurs.</p>
+      <div class="hero-buttons">
+        <a href="#newsletter" class="btn btn-primary" data-i18n="heroBtnPrimary">Join the Opening List</a>
+        <a href="#experience" class="btn btn-outline" data-i18n="heroBtnSecondary">Discover More</a>
+      </div>
+    </div>
+    
+    <div class="hero-scroll">
+      <span data-i18n="heroScroll">Scroll</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================
+       EXPERIENCE SECTION - IMAGE CARDS
+       ============================================ -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline" data-i18n="expTagline">The Experience</p>
+        <h2 data-i18n="expTitle">Crafted for the Discerning</h2>
+        <p data-i18n="expDesc">Every detail considered. Every moment intentional.</p>
+      </div>
+      
+      <div class="image-grid image-grid-4 stagger">
+        <!-- Card 1 -->
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="Single origin coffee beans">
+          <div class="image-card-overlay">
+            <span class="image-card-tag" data-i18n="expCard1Title">Single Origin</span>
+            <h3>Highland Beans</h3>
+            <p data-i18n="expCard1Desc">Highland beans from Minas Gerais</p>
+          </div>
         </div>
-    </section>
-
-    <section class="menu" id="menu">
-        <h2 class="title">Our <span>Menu</span></h2>
-
-        <div class="box-container">
-            <div class="box">
-                <img src="https://i.ibb.co/XkGk0YY/menu-1.png" alt="menu-1">
-                <h3>Filtered Coffee</h3>
-                <div class="price">£15.99 <span>£20.99</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-
-            <div class="box">
-                <img src="https://i.ibb.co/4PvZRWh/menu-2.png" alt="menu-2">
-                <h3>Espresso</h3>
-                <div class="price">£15.99 <span>£20.99</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-
-            <div class="box">
-                <img src="https://i.ibb.co/T1KGT8s/menu-3.png" alt="menu-3">
-                <h3>Cappuccino</h3>
-                <div class="price">£15.99 <span>£20.99</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-
-            <div class="box">
-                <img src="https://i.ibb.co/bP461r8/menu-4.png" alt="menu-4">
-                <h3>Latte</h3>
-                <div class="price">£15.99 <span>£20.99</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-
-            <div class="box">
-                <img src="https://i.ibb.co/6NxVCdw/menu-5.png" alt="menu-5">
-                <h3>Macchiato</h3>
-                <div class="price">£15.99 <span>£20.99</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
-
-            <div class="box">
-                <img src="https://i.ibb.co/tb0H4tV/menu-6.png" alt="menu-6">
-                <h3>Mocha</h3>
-                <div class="price">£15.99 <span>£20.99</span></div>
-                <a href="#" class="btn">Add to Cart</a>
-            </div>
+        
+        <!-- Card 2 -->
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Quiet work zones">
+          <div class="image-card-overlay">
+            <span class="image-card-tag" data-i18n="expCard2Title">Quiet Zones</span>
+            <h3>Focus Space</h3>
+            <p data-i18n="expCard2Desc">Designed for deep focus</p>
+          </div>
         </div>
-    </section>
-
-    <section class="review" id="review">
-        <h2 class="title">Our <span>Customers</span></h2>
-
-        <div class="box-container">
-            <div class="box">
-                <img src="https://i.ibb.co/8dT8L8V/quote-img.png" alt="quote-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi autem voluptatibus nihil
-                    eius ullam molestiae animi totam, blanditiis reprehenderit!</p>
-                <img class="users" src="https://i.ibb.co/4JLPK4b/pic-2.png" alt="pic-2">
-                <h3>Jane B.</h3>
-                <div class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://i.ibb.co/8dT8L8V/quote-img.png" alt="quote-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi autem voluptatibus nihil
-                    eius ullam molestiae animi totam, blanditiis reprehenderit!</p>
-                <img class="users" src="https://i.ibb.co/c23H6vN/pic-2.png" alt="pic-1">
-                <h3>Joseph S.</h3>
-                <div class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star-half.png"
-                        alt="half-star" />
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="https://i.ibb.co/8dT8L8V/quote-img.png" alt="quote-img">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quasi autem voluptatibus nihil
-                    eius ullam molestiae animi totam, blanditiis reprehenderit!</p>
-                <img class="users" src="https://i.ibb.co/3s9j3Y7/pic-3.png" alt="pic-3">
-                <h3>Sarah W.</h3>
-                <div class="stars">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/star.png" alt="star" />
-                </div>
-            </div>
+        
+        <!-- Card 3 -->
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Craft coffee methods">
+          <div class="image-card-overlay">
+            <span class="image-card-tag" data-i18n="expCard3Title">Craft Methods</span>
+            <h3>Artisan Brewing</h3>
+            <p data-i18n="expCard3Desc">Pour-over, siphon, cold brew</p>
+          </div>
         </div>
-    </section>
-
-    <section class="address" id="address">
-        <h2 class="title">Our <span>Address</span></h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d39826.679546076804!2d-0.08184696212821492!3d51.39997745395415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sStarbucks!5e0!3m2!1sen!2suk!4v1761389216387!5m2!1sen!2suk"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-    <section class="footer">
-        <div class="share">
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
-                alt="instagram" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
-                alt="facebook" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="whatsapp" />
-            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/twitterx.png" alt="x" />
+        
+        <!-- Card 4 -->
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80" alt="Premium workspace">
+          <div class="image-card-overlay">
+            <span class="image-card-tag" data-i18n="expCard4Title">Premium Space</span>
+            <h3>Luxury Meets Work</h3>
+            <p data-i18n="expCard4Desc">Luxury meets productivity</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <script src="Script/script.js"></script>
+  <!-- ============================================
+       SIGNATURE COFFEE SECTION
+       ============================================ -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline" data-i18n="sigTagline">Signature Selection</p>
+        <h2 data-i18n="sigTitle">Our Coffee</h2>
+        <p data-i18n="sigDesc">Carefully curated beans roasted to perfection.</p>
+      </div>
+      
+      <div class="image-grid image-grid-3 stagger">
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80" alt="Espresso">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Signature</span>
+            <h3>Espresso</h3>
+            <p>Bold and concentrated highland essence</p>
+          </div>
+        </div>
+        
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80" alt="Pour Over">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Single Origin</span>
+            <h3>Pour Over</h3>
+            <p>Hand-brewed to highlight origin notes</p>
+          </div>
+        </div>
+        
+        <div class="image-card">
+          <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=600&q=80" alt="Cold Brew">
+          <div class="image-card-overlay">
+            <span class="image-card-tag">Refreshing</span>
+            <h3>Cold Brew</h3>
+            <p>18-hour steeped, smooth perfection</p>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: var(--space-xl);" class="fade-up">
+        <a href="pages/menu.html" class="btn btn-gold-outline" data-i18n="viewMenu">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       COWORKING SECTION - SPLIT LAYOUT
+       ============================================ -->
+  <section class="split-section">
+    <div class="split-image slide-left">
+      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1000&q=80" alt="Coworking space">
+    </div>
+    <div class="split-content slide-right">
+      <p class="tagline" data-i18n="coworkTagline">Work in Comfort</p>
+      <h2 data-i18n="coworkTitle">Coworking Reimagined</h2>
+      <p class="lead" data-i18n="coworkDesc">A quiet haven where exceptional coffee meets focused productivity. Two distinct zones designed for how you work best.</p>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin: var(--space-lg) 0;">
+        <div>
+          <h4 style="color: var(--color-gold); margin-bottom: var(--space-xs);" data-i18n="focusZone">Focus Zone</h4>
+          <p data-i18n="focusDesc">Silent workspace for deep concentration</p>
+        </div>
+        <div>
+          <h4 style="color: var(--color-gold); margin-bottom: var(--space-xs);" data-i18n="meetZone">Meet Zone</h4>
+          <p data-i18n="meetDesc">Flexible area for calls and collaboration</p>
+        </div>
+      </div>
+      
+      <a href="pages/coworking.html" class="btn btn-primary" data-i18n="coworkBtn">Explore Coworking</a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WIDE IMAGE QUOTE SECTION
+       ============================================ -->
+  <section class="wide-image-section">
+    <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=1920&q=80" alt="Coffee atmosphere">
+    <div class="wide-image-overlay">
+      <div class="wide-image-content fade-up">
+        <h2 style="font-style: italic; font-weight: 400;">"Where the rhythm of the city meets the calm of the highlands."</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LOCATION SECTION
+       ============================================ -->
+  <section class="section location-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline" data-i18n="locTagline">Find Us</p>
+        <h2 data-i18n="locTitle">Coming to London</h2>
+        <p data-i18n="locDesc">Opening soon in one of London's most vibrant neighbourhoods.</p>
+      </div>
+    </div>
+    
+    <div class="location-image fade-up">
+      <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1920&q=80" alt="London cityscape">
+      <div class="location-card">
+        <h4 style="color: var(--color-gold); margin-bottom: var(--space-xs);">Montis Coffee House</h4>
+        <p>Central London</p>
+        <p style="font-size: 0.875rem; margin-top: var(--space-sm);">Full address to be announced</p>
+        <a href="pages/location.html" class="btn btn-outline" style="margin-top: var(--space-md);" data-i18n="locBtn">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       NEWSLETTER SECTION
+       ============================================ -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="newsletter-bg">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1920&q=80" alt="Coffee beans">
+      <div class="newsletter-overlay"></div>
+    </div>
+    
+    <div class="container">
+      <div class="newsletter-content fade-up">
+        <h2 data-i18n="newsTitle">Be the First to Know</h2>
+        <p data-i18n="newsDesc">Join our exclusive waitlist for early access, special offers, and opening updates.</p>
+        
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="Your email address" data-i18n="newsPlaceholder" required>
+          <button type="submit" class="btn btn-primary" data-i18n="newsBtn">Subscribe</button>
+        </form>
+        
+        <p class="form-success" data-i18n="newsSuccess">Thank you! You're on the list.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Montis <span>Coffee House</span></a>
+          <p data-i18n="footerSlogan">Highland coffee, low noise.</p>
+          <div class="social-links" style="margin-top: var(--space-md);">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="18" cy="6" r="1"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.28-.03-.56-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-i18n="footerLinks">Quick Links</h4>
+          <ul>
+            <li><a href="pages/menu.html" data-i18n="navMenu">Menu</a></li>
+            <li><a href="pages/coworking.html" data-i18n="navCoworking">Coworking</a></li>
+            <li><a href="pages/about.html" data-i18n="navAbout">About</a></li>
+            <li><a href="pages/contact.html" data-i18n="navContact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-i18n="footerHours">Opening Hours</h4>
+          <p data-i18n="hoursTBA">Opening hours to be announced</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4 data-i18n="footerSocial">Follow Us</h4>
+          <p>@montiscoffee</p>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p data-i18n="footerCopyright">© 2025 Montis Coffee House. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="pages/privacy.html" data-i18n="footerPrivacy">Privacy Policy</a>
+          <a href="pages/terms.html" data-i18n="footerTerms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Script/script.js"></script>
 </body>
-
 </html>
-

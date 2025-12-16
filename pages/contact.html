@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Montis Coffee House - We'd love to hear from you.">
+  <title>Contact | Montis Coffee House</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Style/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="../index.html" class="logo">Montis <span>Coffee House</span></a>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="../index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+            <li><a href="menu.html" class="nav-link" data-i18n="navMenu">Menu</a></li>
+            <li><a href="coworking.html" class="nav-link" data-i18n="navCoworking">Coworking</a></li>
+            <li><a href="location.html" class="nav-link" data-i18n="navLocation">Location</a></li>
+            <li><a href="about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+            <li><a href="contact.html" class="nav-link active" data-i18n="navContact">Contact</a></li>
+          </ul>
+          <div class="lang-switch">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="pt">PT</button>
+          </div>
+          <a href="../index.html#newsletter" class="btn btn-primary header-cta" data-i18n="headerCta">Join Waitlist</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero-short hero-mini">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=1920&q=80" alt="Coffee shop atmosphere">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content fade-up">
+      <h1 data-i18n="contactHeroTitle">Contact Us</h1>
+      <p class="hero-slogan" data-i18n="contactHeroDesc">We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="tagline">Get in Touch</p>
+        <h2>Send Us a Message</h2>
+        <p>Have a question or feedback? We'd love to hear from you.</p>
+      </div>
+      
+      <form class="contact-form fade-up" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" data-i18n="formName">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="formEmail">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="subject" data-i18n="formSubject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="How can we help?">
+        </div>
+        
+        <div class="form-group">
+          <label for="message" data-i18n="formMessage">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" data-i18n="formSubmit">Send Message</button>
+        
+        <p class="form-success" data-i18n="formSuccess">Thank you for your message!</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Business Enquiries -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="image-grid image-grid-2">
+        <div class="fade-up" style="padding: var(--space-xl);">
+          <p class="tagline" data-i18n="businessTitle">Business Enquiries</p>
+          <h3>Partnerships & Press</h3>
+          <p style="margin: var(--space-md) 0;" data-i18n="businessDesc">For partnerships and press:</p>
+          <p style="color: var(--color-gold); font-size: 1.125rem;">business@montiscoffee.com</p>
+        </div>
+        <div class="image-card" style="aspect-ratio: auto; min-height: 300px;">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Business meeting">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Section -->
+  <section class="wide-image-section" style="height: 50vh;">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=80" alt="Coffee">
+    <div class="wide-image-overlay">
+      <div class="wide-image-content fade-up">
+        <p class="tagline" style="color: var(--color-gold);">Follow Our Journey</p>
+        <h2>@montiscoffee</h2>
+        <div class="social-links" style="justify-content: center; margin-top: var(--space-lg);">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="18" cy="6" r="1"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5 0-.28-.03-.56-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">Montis <span>Coffee House</span></a>
+          <p data-i18n="footerSlogan">Highland coffee, low noise.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="coworking.html">Coworking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <p>Opening hours to be announced</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <p>@montiscoffee</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Montis Coffee House. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../Script/script.js"></script>
+</body>
+</html>
